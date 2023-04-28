@@ -1,0 +1,565 @@
+[
+    {
+        "model": "catalog.typefood",
+        "pk": 1,
+        "fields": {
+            "name": "carboidrato"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 2,
+        "fields": {
+            "name": "verdura"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 3,
+        "fields": {
+            "name": "legume"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 4,
+        "fields": {
+            "name": "fruta"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 5,
+        "fields": {
+            "name": "laticínios"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 6,
+        "fields": {
+            "name": "proteína"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 7,
+        "fields": {
+            "name": "Gordura"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 8,
+        "fields": {
+            "name": "massa"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 9,
+        "fields": {
+            "name": "folha"
+        }
+    },
+    {
+        "model": "catalog.typefood",
+        "pk": 10,
+        "fields": {
+            "name": "tempero"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 1,
+        "fields": {
+            "display_name": "açúcar refinado",
+            "name": "açúcar refinado",
+            "type_food": 1
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 2,
+        "fields": {
+            "display_name": "açúcar mascavo",
+            "name": "açúcar mascavo",
+            "type_food": 1
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 3,
+        "fields": {
+            "display_name": "manteiga",
+            "name": "manteiga",
+            "type_food": 5
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 4,
+        "fields": {
+            "display_name": "pasta de amendoim",
+            "name": "pasta de amendoim",
+            "type_food": 1
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 5,
+        "fields": {
+            "display_name": "farinha de trigo",
+            "name": "farinha de trigo",
+            "type_food": 1
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 6,
+        "fields": {
+            "display_name": "massa folhada",
+            "name": "massa folhada",
+            "type_food": 8
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 7,
+        "fields": {
+            "display_name": "banana",
+            "name": "banana",
+            "type_food": 6
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 8,
+        "fields": {
+            "display_name": "limão",
+            "name": "limão",
+            "type_food": 4
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 9,
+        "fields": {
+            "display_name": "canela",
+            "name": "canela",
+            "type_food": 9
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 10,
+        "fields": {
+            "display_name": "ovo",
+            "name": "ovo",
+            "type_food": 6
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 11,
+        "fields": {
+            "display_name": "leite",
+            "name": "leite",
+            "type_food": 5
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 12,
+        "fields": {
+            "display_name": "sal",
+            "name": "sal",
+            "type_food": 10
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 13,
+        "fields": {
+            "display_name": "parmesão",
+            "name": "parmesão",
+            "type_food": 5
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 14,
+        "fields": {
+            "display_name": "açúcar",
+            "name": "açúcar",
+            "type_food": 1
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 15,
+        "fields": {
+            "display_name": "tapioca",
+            "name": "tapioca",
+            "type_food": 6
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 16,
+        "fields": {
+            "display_name": "mussarela",
+            "name": "mussarela",
+            "type_food": 5
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 17,
+        "fields": {
+            "display_name": "tomate",
+            "name": "tomate",
+            "type_food": 4
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 1,
+        "fields": {
+            "name": "90 ml de leite"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 2,
+        "fields": {
+            "name": "1 colher de sopa de manteiga"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 3,
+        "fields": {
+            "name": "1/2 colher de chá de sal"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 4,
+        "fields": {
+            "name": "2 colheres de sopa de parmesão ralado"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 5,
+        "fields": {
+            "name": "1 xícara de chá de polvilho doce ou azedo"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 6,
+        "fields": {
+            "name": "100 g de açúcar refinado"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 7,
+        "fields": {
+            "name": "80 g de açúcar mascavo"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 8,
+        "fields": {
+            "name": "170 g de manteiga"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 9,
+        "fields": {
+            "name": "170 g de pasta de amendoim sem açúcar"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 10,
+        "fields": {
+            "name": "1 ovo grande"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 11,
+        "fields": {
+            "name": "250 g de farinha de trigo"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 12,
+        "fields": {
+            "name": "5 g de bicarbonato de sódio"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 13,
+        "fields": {
+            "name": "1 rolo de massa folhada"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 14,
+        "fields": {
+            "name": "2 bananas maduras"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 15,
+        "fields": {
+            "name": "Suco de 1/2 limão"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 16,
+        "fields": {
+            "name": "1 colher de sopa de açúcar"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 17,
+        "fields": {
+            "name": "Canela a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 18,
+        "fields": {
+            "name": "Gema de ovo para pincelar"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 19,
+        "fields": {
+            "name": "Açúcar para polvilhar"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 20,
+        "fields": {
+            "name": "1 ovo"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 21,
+        "fields": {
+            "name": "2 colheres de sopa de tapioca"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 22,
+        "fields": {
+            "name": "1 pitada de sal rosa"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 23,
+        "fields": {
+            "name": "1 fio de azeite de oliva"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 24,
+        "fields": {
+            "name": "1 fatia de queijo mussarela"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 25,
+        "fields": {
+            "name": "1 colher de sopa de tomate picadinho"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 26,
+        "fields": {
+            "name": "Orégano a gosto"
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 1,
+        "fields": {
+            "name": "waffle de pão de queijo",
+            "subject": "lanche",
+            "description": "Bata todos ingredientes, depois junte o polvilho e misture bem.\r\nQuanddo a máquina de waffle estiver quente, unte-a com manteiga, coloque a massa e espere dourar.",
+            "time_prepare": 20,
+            "food_yield": "2 porções",
+            "ingredients": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "foods": [
+                3,
+                11,
+                12,
+                13
+            ]
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 2,
+        "fields": {
+            "name": "cookies de amendoim",
+            "subject": "lanche",
+            "description": "Em uma batedeira, adicione o açúcar refinado, o mascavo, a manteiga e bata por cerca de 2 minutos até virar uma pasta.\r\nAcrescente a pasta de amendoim, o ovo e bata por mais 5 minutos até virar um creme.\r\nColoque a farinha de trigo, o bicarbonato e bata, em velocidade baixa, apenas para incorporar tudo.\r\nLeve a massa para a geladeira por cerca de 1 hora.\r\nPegue pequenas porções da massa, molde em formato de bolinhas e achate elas com um garfo.\r\nDisponhas os cookies em uma forma com papel manteiga, com uma distância de 3 cm entre cada um.\r\nLeve ao forno preaquecido a 180 °C por cerca de 13 minutos.\r\nAgora é só servir. Bom apetite.",
+            "time_prepare": 25,
+            "food_yield": "20 porções",
+            "ingredients": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ],
+            "foods": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                10
+            ]
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 3,
+        "fields": {
+            "name": "tortinha folhada de banana",
+            "subject": "lanche",
+            "description": "Corte as bananas em rodelas médias e reserve.\r\nAdicione o suco de limão, o açúcar e a canela e misture até dissolver.\r\nAbra a massa e corte retângulos do tamanho desejado.\r\nColoque o recheio.\r\nFeche a tortinha com a ajuda de um garfo.\r\nColoque em uma forma untada e enfarinhada ou com papel manteiga.\r\nPincele uma gema e polvilhe açúcar em toda superfície.\r\nAsse em forno preaquecido a 200 °C até dourar.\r\nAgora é só servir! Bom apetite.",
+            "time_prepare": 60,
+            "food_yield": "5 unidades",
+            "ingredients": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+            ],
+            "foods": [
+                6,
+                7,
+                8,
+                10,
+                14
+            ]
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 4,
+        "fields": {
+            "name": "crepioca de queijo com tomate e orégano",
+            "subject": "Café da manhã",
+            "description": "Reúna todos os ingredientes;\r\nEm um recipiente, misture o ovo, a tapioca e o sal;\r\nEm uma frigideira, aqueça o azeite, despeje a mistura de ovo e tapioca e deixe cozinhar até começar soltando do fundo da frigideira, vire e doure o outro lado;\r\nAdicione o queijo, o tomate e o orégano, tampe a frigideira e cozinhe por 1 a 2 minutos;\r\nDepois do tempo necessário, dobre a crepioca ao meio e acomode em um prato. Sirva essa delícia e bom apetite!",
+            "time_prepare": 10,
+            "food_yield": "1 unidade",
+            "ingredients": [
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26
+            ],
+            "foods": [
+                10,
+                15,
+                16,
+                17
+            ]
+        }
+    },
+    {
+        "model": "catalog.clientfoodrecipe",
+        "pk": 1,
+        "fields": {
+            "client": 1,
+            "created_at": "2023-04-28T05:13:37.885Z",
+            "updated_at": "2023-04-28T05:13:37.885Z",
+            "food_recipe": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "catalog.clientfoodrecipe",
+        "pk": 2,
+        "fields": {
+            "client": 2,
+            "created_at": "2023-04-28T05:13:47.498Z",
+            "updated_at": "2023-04-28T05:13:47.498Z",
+            "food_recipe": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "catalog.clientfoodrecipe",
+        "pk": 3,
+        "fields": {
+            "client": 3,
+            "created_at": "2023-04-28T05:13:56.188Z",
+            "updated_at": "2023-04-28T05:13:56.188Z",
+            "food_recipe": [
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "catalog.clientfoodrecipe",
+        "pk": 4,
+        "fields": {
+            "client": 4,
+            "created_at": "2023-04-28T05:14:00.203Z",
+            "updated_at": "2023-04-28T05:14:00.203Z",
+            "food_recipe": [
+                2,
+                3
+            ]
+        }
+    }
+]

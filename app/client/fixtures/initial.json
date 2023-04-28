@@ -138,5 +138,19 @@
             "created_at": "2023-04-27",
             "updated_at": "2023-04-27"
         }
+    },
+    {
+        "model": "client.client",
+        "pk": 11,
+        "fields": {
+            "first_name": "Stevie",
+            "last_name": "Gladney",
+            "full_name": "Stevie Barbara P. Gladney",
+            "email": "stevie",
+            "phone": "301-888-81",
+            "photo": "photos/stevie.jpg",
+            "created_at": "2023-04-28",
+            "updated_at": "2023-04-28"
+        }
     }
 ]
