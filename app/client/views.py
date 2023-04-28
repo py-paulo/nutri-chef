@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .models import Client
+
 
 def index(request):
-    return render(request, "clients.html")
+    clients = Client.objects.order_by("first_name")
+    return render(request, "clients.html", { "clients": clients, "len": clients.__len__ } )

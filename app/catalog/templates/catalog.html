@@ -9,17 +9,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% load static %}
   <link rel="stylesheet" href="{% static "main.css" %}">
-  <title>NutriChef | Meus Clientes</title>
+  <title>NutriChef | Meu Catálogo</title>
 </head>
 <body>
   <div class="ui pointing menu">
     <div class="header item">
       NutriChef
     </div>
-    <a class="item active">
+    <a class="item">
       Clientes
     </a>
-    <a class="item">
+    <a class="item active">
       Catálogo
     </a>
     <a class="item">
@@ -31,7 +31,7 @@
     <div class="twelve wide column">
       <div class="ui search">
         <div class="ui icon fluid big input">
-          <input class="prompt" type="text" placeholder="Procurar Clientes...">
+          <input class="prompt" type="text" placeholder="Procurar Receita...">
           <i class="search icon"></i>
         </div>
         <div class="results"></div>
@@ -41,45 +41,71 @@
   </div>
   <div>
     <div class="ui eight column grid">
-      {% for client in clients %}
+
       <div class="column">
         <div class="ui fluid raised link card">
-          <div class="blurring dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="ui inverted button">Detalhes do Cliente</div>
-                </div>
-              </div>
-            </div>
-            <img src="{{ client.photo.url }}">
-          </div>
           <div class="content">
-            <div class="header">{{ client.first_name }}</div>
+            <i class="right floated star icon"></i>
+            <div class="header">Cookies de amendoim</div>
             <div class="meta">
-              {{ client.full_name }}
+              <span>Lanche</span>
             </div>
-            <div class="description">
-              {{ client.email }}
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="right floated">
-              {{ client.created_at|date:'Y-m-d' }}
-            </span>
-            <span>
-              <i class="phone icon"></i>
-              {{ client.phone }}
-            </span>
-          </div>
+            <ul class="ui list">
+              <li>100 g de açúcar refinado</li>
+              <li>80 g de açúcar mascavo</li>
+              <li>170 g de manteiga</li>
+              <li>170 g de pasta de amendoim sem açúcar</li>
+              <li>170 g de pasta de amendoim sem açúcar</li>
+              <li>250 g de farinha de trigo</li>
+              <li>5 g de bicarbonato de sódio</li>
+            </ul>
+        </div>
+        <div class="extra content">
+          <span class="left floated like">
+            <i class="user plus icon"></i>
+            20 porções
+          </span>
+          <span class="right floated star">
+            <i class="clock icon"></i>
+            25min
+          </span>
         </div>
       </div>
-      {% endfor %}
+    </div>
 
+    <div class="column">
+      <div class="ui fluid raised link card">
+        <div class="content">
+          <i class="right floated star icon"></i>
+          <div class="header">Tortinha folhada de banana</div>
+          <div class="meta">
+            <span>Lanche</span>
+          </div>
+          <ul class="ui list">
+            <li>1 rolo de massa folhada</li>
+            <li>2 bananas maduras</li>
+            <li>Suco de 1/2 limão</li>
+            <li>1 colher de sopa de açúcar</li>
+            <li>Canela a gosto</li>
+            <li>Gema de ovo para pincelar</li>
+            <li>Açúcar para polvilhar</li>
+          </ul>
+      </div>
+      <div class="extra content">
+        <span class="left floated like">
+          <i class="user plus icon"></i>
+          5 unidades
+        </span>
+        <span class="right floated star">
+          <i class="clock icon"></i>
+          60min
+        </span>
+      </div>
     </div>
   </div>
 
-  {% if len > 20 %}
+  </div>
+
   <div class="">
     <div class="">
       <div class="ui sixteen column centered grid">
@@ -100,8 +126,6 @@
       </div>
     </div>
   </div>
-  {% endif %}
 
-  <script src="{% static "main.js" %}"></script>
 </body>
 </html>

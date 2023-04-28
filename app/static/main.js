@@ -1,0 +1,3 @@
+$('.image').dimmer({
+  on: 'hover'
+});
