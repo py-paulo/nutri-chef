@@ -1,0 +1,142 @@
+[
+    {
+        "model": "client.client",
+        "pk": 1,
+        "fields": {
+            "first_name": "Daniel",
+            "last_name": "Bender",
+            "full_name": "Paul G. Bender",
+            "email": "deniel@mail.com",
+            "phone": "937486063",
+            "photo": "photos/daniel.jpg",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 2,
+        "fields": {
+            "first_name": "Veronika",
+            "last_name": "Braswell",
+            "full_name": "Veronika Angela D. Braswell",
+            "email": "veronika@mail.com",
+            "phone": "910594080",
+            "photo": "photos/veronika.jpg",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 3,
+        "fields": {
+            "first_name": "Elliot",
+            "last_name": "Thomas",
+            "full_name": "Elliot Lee K. Thomas",
+            "email": "elliot@mail.com",
+            "phone": "51683947",
+            "photo": "photos/elliot.jpg",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 4,
+        "fields": {
+            "first_name": "Elyse",
+            "last_name": "Aranda",
+            "full_name": "Elyse Bonnie T. Aranda",
+            "email": "elyse@mail.com",
+            "phone": "270-458-999",
+            "photo": "photos/elyse.png",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 5,
+        "fields": {
+            "first_name": "Helen",
+            "last_name": "Smith",
+            "full_name": "Helen Annie J. Smith",
+            "email": "helen@mail.com",
+            "phone": "480-296-039",
+            "photo": "photos/helen.jpg",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 6,
+        "fields": {
+            "first_name": "Jenny",
+            "last_name": "Schneck",
+            "full_name": "Jenny Elaine J. Schneck",
+            "email": "jenny@mail.com",
+            "phone": "386-566-789",
+            "photo": "photos/jenny.jpg",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 7,
+        "fields": {
+            "first_name": "Kristy",
+            "last_name": "Downs",
+            "full_name": "Kristy Caryn R. Downs",
+            "email": "kristy@mail.com",
+            "phone": "740-459-864",
+            "photo": "photos/kristy.png",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 8,
+        "fields": {
+            "first_name": "Matthew",
+            "last_name": "Melvin",
+            "full_name": "Matthew Brian M. Melvin",
+            "email": "matthew@mail.com",
+            "phone": "615-430-827",
+            "photo": "photos/matthew.png",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 9,
+        "fields": {
+            "first_name": "Molly",
+            "last_name": "Green",
+            "full_name": "Molly Christine J. Green",
+            "email": "molly@mail.com",
+            "phone": "856-957-912",
+            "photo": "photos/molly.png",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    },
+    {
+        "model": "client.client",
+        "pk": 10,
+        "fields": {
+            "first_name": "Steve",
+            "last_name": "Partin",
+            "full_name": "Bradley D. Partin",
+            "email": "partin@mail.com",
+            "phone": "714-785-208",
+            "photo": "photos/steve.jpg",
+            "created_at": "2023-04-27",
+            "updated_at": "2023-04-27"
+        }
+    }
+]

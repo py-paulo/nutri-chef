@@ -39,10 +39,9 @@
     </div>
     <div class="two wide column"></div>
   </div>
-  <div>
-    <div class="ui eight column grid">
+  <div class="cards-group">
+    <div class="ui six stackable cards">
       {% for client in clients %}
-      <div class="column">
         <div class="ui fluid raised link card">
           <div class="blurring dimmable image">
             <div class="ui dimmer">
@@ -73,7 +72,6 @@
             </span>
           </div>
         </div>
-      </div>
       {% endfor %}
 
     </div>

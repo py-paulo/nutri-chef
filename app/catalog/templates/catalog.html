@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+    integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+    integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   {% load static %}
-  <link rel="stylesheet" href="{% static "main.css" %}">
+  <link rel="stylesheet" href="{% static " main.css" %}">
   <title>NutriChef | Meu Catálogo</title>
 </head>
+
 <body>
   <div class="ui pointing menu">
     <div class="header item">
@@ -39,71 +46,36 @@
     </div>
     <div class="two wide column"></div>
   </div>
-  <div>
-    <div class="ui eight column grid">
+  <div class="cards-group">
+    <div class="ui six stackable cards">
 
-      <div class="column">
-        <div class="ui fluid raised link card">
-          <div class="content">
-            <i class="right floated star icon"></i>
-            <div class="header">Cookies de amendoim</div>
-            <div class="meta">
-              <span>Lanche</span>
-            </div>
-            <ul class="ui list">
-              <li>100 g de açúcar refinado</li>
-              <li>80 g de açúcar mascavo</li>
-              <li>170 g de manteiga</li>
-              <li>170 g de pasta de amendoim sem açúcar</li>
-              <li>170 g de pasta de amendoim sem açúcar</li>
-              <li>250 g de farinha de trigo</li>
-              <li>5 g de bicarbonato de sódio</li>
-            </ul>
+      {% for recipe in catalog %}
+      <div class="ui fluid raised link card">
+        <div class="content">
+          <i class="right floated star icon"></i>
+          <div class="header">{{ recipe.name }}</div>
+          <div class="meta">
+            <span>{{ recipe.subject }}</span>
+          </div>
+          <ul class="ui list">
+            {% for ingredient in recipe.ingredients %}
+            <li>{{ ingredient.name }}</li>
+            {% endfor %}
+          </ul>
         </div>
         <div class="extra content">
           <span class="left floated like">
             <i class="user plus icon"></i>
-            20 porções
+            {{ recipe.food_yield }}
           </span>
           <span class="right floated star">
             <i class="clock icon"></i>
-            25min
+            {{ recipe.time_prepare }} min
           </span>
         </div>
       </div>
+      {% endfor %}
     </div>
-
-    <div class="column">
-      <div class="ui fluid raised link card">
-        <div class="content">
-          <i class="right floated star icon"></i>
-          <div class="header">Tortinha folhada de banana</div>
-          <div class="meta">
-            <span>Lanche</span>
-          </div>
-          <ul class="ui list">
-            <li>1 rolo de massa folhada</li>
-            <li>2 bananas maduras</li>
-            <li>Suco de 1/2 limão</li>
-            <li>1 colher de sopa de açúcar</li>
-            <li>Canela a gosto</li>
-            <li>Gema de ovo para pincelar</li>
-            <li>Açúcar para polvilhar</li>
-          </ul>
-      </div>
-      <div class="extra content">
-        <span class="left floated like">
-          <i class="user plus icon"></i>
-          5 unidades
-        </span>
-        <span class="right floated star">
-          <i class="clock icon"></i>
-          60min
-        </span>
-      </div>
-    </div>
-  </div>
-
   </div>
 
   <div class="">
@@ -128,4 +100,5 @@
   </div>
 
 </body>
+
 </html>
