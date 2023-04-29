@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="clients"),
-    path("<int:client_id>/", views.client, name="client")
+    path("<int:client_id>/", views.client, name="client"),
+    path("add-food-restriction/", views.add_food_restriction, name="add-food-restriction")
 ]

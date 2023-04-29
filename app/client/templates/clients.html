@@ -15,6 +15,22 @@
     </a>
   </div>
   <div class="ui grid">
+    {% if iserror == "yes" %}
+      <div class="twelve wide widescreen twelve wide large screen twelve wide compute twelve wide tablet sixteen wide mobile column">
+        <div>
+          <div class="ui negative icon message">
+            <i class="exclamation triangle icon"></i>
+            <i class="close icon"></i>
+            <div class="content">
+            <div class="header">
+              Ops... parece que aconteceu um erro :/
+            </div>
+            <p>{{ message_error }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
     <div class="widescreen only two wide column"></div>
     <div class="twelve wide widescreen twelve wide large screen twelve wide compute twelve wide tablet sixteen wide mobile column">
       <div class="ui search">
@@ -28,7 +44,7 @@
     <div class="widescreen only two wide column"></div>
   </div>
   <div class="cards-group">
-    <div class="ui six stackable cards">
+    <div class="ui six stackable doubling cards">
       {% for client in clients %}
         <div class="ui fluid raised link card">
           <div class="blurring dimmable image">

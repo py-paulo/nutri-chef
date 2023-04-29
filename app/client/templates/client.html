@@ -55,13 +55,17 @@
               <div class="sub header">Partimos do principio que caso não seja listado o alimento aqui o cliente pode consumir sem restrição.</div>
             </div>
           </h2>
-          <div class="ui fluid big right labeled left icon input">
-            <i class="shopping cart icon"></i>
-            <input type="text" placeholder="Nome da comida...">
-            <a class="ui tag label">
-              Adicionar
-            </a>
-          </div>
+          <form class="ui form" method="POST" action="{% url 'add-food-restriction' %}">
+            {% csrf_token %}
+            <div class="ui fluid big right labeled left icon input">
+              <i class="shopping cart icon"></i>
+                <input type="text" id="food-name" name="food-name" required placeholder="Nome da comida...">
+                <button type="submit" class="ui tag label">
+                  Adicionar
+                </button>
+            </div>
+            <input type="hidden" id="client-id" name="client-id" value="{{ client.id }}" />
+          </form>
           <div class="ui horizontal divider">
           </div>
           <div>
@@ -110,4 +114,5 @@
     </div>
     <div class="widescreen only two wide column"></div>
   </div>
+  
 {% endblock %}

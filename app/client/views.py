@@ -1,12 +1,20 @@
 from django.shortcuts import render
+from django.core.exceptions import ObjectDoesNotExist
+from django.shortcuts import redirect
 from .models import Client
 from catalog.models import ClientNotFood, FoodRecipe
-from django.core.exceptions import ObjectDoesNotExist
 
 
 def index(request):
     clients = Client.objects.order_by("first_name")
-    return render(request, "clients.html", { "clients": clients, "len": clients.__len__ } )
+    message_error = request.GET.get("error") 
+    message_error = message_error.strip().capitalize() if type(message_error) == str else None
+    return render(request, "clients.html", {
+        "clients": clients,
+        "len": clients.__len__,
+        "iserror": "yes" if message_error else "no",
+        "message_error": message_error
+        })
 
 
 def client(request, client_id=1):
@@ -29,3 +37,12 @@ def client(request, client_id=1):
         'ingredients': recipe.ingredients.all()[:5]
     }, catalog))
     return render(request, "client.html", { "client": client, "not_foods": not_foods, "catalog": catalog } )
+
+
+def add_food_restriction(request):
+    if request.method == "GET":
+        return redirect("/clients/?error=invalid method GET for this route!")
+
+    client_id = request.POST.get("client-id")
+
+    return redirect("/clients" + ("/" + client_id if client_id else "/"), success="yes")

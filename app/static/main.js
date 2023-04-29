@@ -6,3 +6,12 @@ $('.detail').on("click", function() {
   let client_id = $(this).attr('client-id');
   window.location.replace(`/clients/${client_id}`);
 });
+
+$('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
