@@ -1,0 +1,118 @@
+{% extends "main.html" %}
+
+{% block title %} Cliente {% endblock %}
+
+{% block content %}
+  <div class="ui pointing menu">
+    <div class="header item">
+      NutriChef
+    </div>
+    <a class="item active" href="{% url 'clients' %}">
+      Clientes
+    </a>
+    <a class="item" href="{% url 'catalog' %}">
+      Catálogo
+    </a>
+    <a class="item">
+      Sobre
+    </a>
+  </div>
+
+  <div class="ui grid">
+    <div class="two wide column">
+    </div>
+
+    <div class="twelve wide column">
+      <div class="ui grid">
+        <div class="six wide column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="{{ client.photo.url }}">
+            </div>
+            <div class="content">
+              <a class="header">{{ client.first_name }}</a>
+              <div class="meta">
+                {{ client.full_name }}
+              </div>
+              <div class="description">
+                {{ client.email }}
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                {{ client.created_at|date:'Y-m-d' }}
+              </span>
+              <span>
+                <i class="phone icon"></i>
+                {{ client.phone }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ten wide column">
+          <h2 class="ui center aligned icon header">
+            <i class="address book outline icon"></i>
+            <div class="content">
+              Alimentos que o cliente não pode consumir
+              <div class="sub header">Partimos do principio que caso não seja listado o alimento aqui o cliente pode consumir sem restrição.</div>
+            </div>
+          </h2>
+          <div class="ui fluid big right labeled left icon input">
+            <i class="shopping cart icon"></i>
+            <input type="text" placeholder="Nome da comida...">
+            <a class="ui tag label">
+              Adicionar
+            </a>
+          </div>
+          <div class="ui horizontal divider">
+          </div>
+          <div>
+            {% for food in not_foods %}
+            <a class="ui red tag label">{{ food.name }}</a>
+            {% endfor %}
+          </div>
+          <div class="ui horizontal divider">
+          </div>
+
+          <div class="cards-group">
+            <div class="ui three stackable cards">
+        
+              {% for recipe in catalog %}
+              <a class="ui fluid raised link card" href="{% url 'recipe' recipe.id %}">
+                <div class="content">
+                  <i class="right floated star icon"></i>
+                  <div class="header">{{ recipe.name|capfirst }}</div>
+                  <div class="meta">
+                    <span>{{ recipe.subject }}</span>
+                  </div>
+                  <ul class="ui list">
+                    {% for ingredient in recipe.ingredients %}
+                    <li>{{ ingredient.name }}</li>
+                    {% endfor %}
+                    <span>...</span>
+                  </ul>
+                </div>
+                <div class="extra content">
+                  <span class="left floated like">
+                    <i class="user plus icon"></i>
+                    {{ recipe.food_yield }}
+                  </span>
+                  <span class="right floated star">
+                    <i class="clock icon"></i>
+                    {{ recipe.time_prepare }} min
+                  </span>
+                </div>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="two wide column">
+      
+    </div>
+  </div>
+{% endblock %}

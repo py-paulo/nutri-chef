@@ -25,6 +25,14 @@ class Ingredient(models.Model):
         return self.name[:30]
 
 
+class ClientNotFood(models.Model):
+    client = models.ForeignKey(Client, on_delete=models.CASCADE)
+    foods = models.ManyToManyField(Food)
+
+    def __str__(self) -> str:
+        return self.client.first_name.capitalize()
+
+
 class FoodRecipe(models.Model):
     name = models.CharField(max_length=100)
     ingredients = models.ManyToManyField(Ingredient)
