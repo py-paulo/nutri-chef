@@ -5,3 +5,15 @@ body {
 .cards-group {
     padding-top: 20px;
 }
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    .ui.column.grid>[class*="twelve wide large screen"].column,.ui.grid>.column.row>[class*="twelve wide large screen"].column,.ui.grid>.row>[class*="twelve wide large screen"].column,.ui.grid>[class*="twelve wide large screen"].column {
+        width: 100%!important
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .ui.column.grid>[class*="twelve wide tablet"].column,.ui.grid>.column.row>[class*="twelve wide tablet"].column,.ui.grid>.row>[class*="twelve wide tablet"].column,.ui.grid>[class*="twelve wide tablet"].column {
+        width: 100%!important;
+    }
+}
