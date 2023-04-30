@@ -15,3 +15,10 @@ $('.message .close')
     ;
   })
 ;
+
+$('.delete')
+  .on('click', function() {
+    let food_name = $(this).attr('data-value');
+    $('#delete-food-name').val(food_name);
+    $('.ui.basic.modal').modal('show');
+  });

@@ -1,18 +1,9 @@
 from django.db import models
 from client.models import Client
 
-
-class TypeFood(models.Model):
-    name = models.CharField(max_length=50)
-
-    def __str__(self) -> str:
-        return self.name.capitalize()
-
-
 class Food(models.Model):
     display_name = models.CharField(max_length=60)
     name = models.CharField(max_length=30)
-    type_food = models.ForeignKey(TypeFood, on_delete=models.CASCADE)
 
     def __str__(self) -> str:
         return self.display_name
@@ -44,13 +35,3 @@ class FoodRecipe(models.Model):
 
     def __str__(self) -> str:
         return self.name
-
-
-class ClientFoodRecipe(models.Model):
-    client = models.ForeignKey(Client, on_delete=models.CASCADE)
-    food_recipe = models.ManyToManyField(FoodRecipe)
-    created_at = models.DateTimeField(auto_now=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    def __str__(self) -> str:
-        return self.client.first_name.capitalize() + ' ' + self.client.last_name.capitalize()

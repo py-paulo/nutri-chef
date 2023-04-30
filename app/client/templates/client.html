@@ -70,7 +70,7 @@
           </div>
           <div>
             {% for food in not_foods %}
-            <a class="ui red tag label">{{ food.name }}</a>
+            <a class="ui red tag label">{{ food.name }} <i data-value="{{ food.name }}" class="delete icon"></i></a>
             {% endfor %}
           </div>
           <div class="ui horizontal divider">
@@ -113,6 +113,28 @@
       </div>
     </div>
     <div class="widescreen only two wide column"></div>
+  </div>
+
+  <div class="ui basic tiny modal">
+    <div id="delete-message" class="ui icon header">
+      <i class="trash alternate icon"></i>
+      Deseja deletar esse item?
+    </div>
+    <div class="actions">
+      <form method="POST" action="{% url 'delete-food-restriction' %}" class="ui form">
+        {% csrf_token %}
+        <input type="hidden" id="delete-food-name" name="delete-food-name" value="" />
+        <input type="hidden" id="client-to-delete-food" name="client-to-delete-food" value="{{ client.id }}" />
+        <div class="ui red basic cancel inverted button">
+          <i class="remove icon"></i>
+          No
+        </div>
+        <button type="submit" class="ui red ok inverted button">
+          <i class="checkmark icon"></i>
+          Yes
+        </button>
+      </form>
+    </div>
   </div>
   
 {% endblock %}
