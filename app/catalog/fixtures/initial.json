@@ -1,81 +1,10 @@
 [
     {
-        "model": "catalog.typefood",
-        "pk": 1,
-        "fields": {
-            "name": "carboidrato"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 2,
-        "fields": {
-            "name": "verdura"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 3,
-        "fields": {
-            "name": "legume"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 4,
-        "fields": {
-            "name": "fruta"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 5,
-        "fields": {
-            "name": "laticínios"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 6,
-        "fields": {
-            "name": "proteína"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 7,
-        "fields": {
-            "name": "Gordura"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 8,
-        "fields": {
-            "name": "massa"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 9,
-        "fields": {
-            "name": "folha"
-        }
-    },
-    {
-        "model": "catalog.typefood",
-        "pk": 10,
-        "fields": {
-            "name": "tempero"
-        }
-    },
-    {
         "model": "catalog.food",
         "pk": 1,
         "fields": {
             "display_name": "açúcar refinado",
-            "name": "açúcar refinado",
-            "type_food": 1
+            "name": "açúcar refinado"
         }
     },
     {
@@ -83,8 +12,7 @@
         "pk": 2,
         "fields": {
             "display_name": "açúcar mascavo",
-            "name": "açúcar mascavo",
-            "type_food": 1
+            "name": "açúcar mascavo"
         }
     },
     {
@@ -92,8 +20,7 @@
         "pk": 3,
         "fields": {
             "display_name": "manteiga",
-            "name": "manteiga",
-            "type_food": 5
+            "name": "manteiga"
         }
     },
     {
@@ -101,8 +28,7 @@
         "pk": 4,
         "fields": {
             "display_name": "pasta de amendoim",
-            "name": "pasta de amendoim",
-            "type_food": 1
+            "name": "pasta de amendoim"
         }
     },
     {
@@ -110,8 +36,7 @@
         "pk": 5,
         "fields": {
             "display_name": "farinha de trigo",
-            "name": "farinha de trigo",
-            "type_food": 1
+            "name": "farinha de trigo"
         }
     },
     {
@@ -119,8 +44,7 @@
         "pk": 6,
         "fields": {
             "display_name": "massa folhada",
-            "name": "massa folhada",
-            "type_food": 8
+            "name": "massa folhada"
         }
     },
     {
@@ -128,8 +52,7 @@
         "pk": 7,
         "fields": {
             "display_name": "banana",
-            "name": "banana",
-            "type_food": 6
+            "name": "banana"
         }
     },
     {
@@ -137,8 +60,7 @@
         "pk": 8,
         "fields": {
             "display_name": "limão",
-            "name": "limão",
-            "type_food": 4
+            "name": "limão"
         }
     },
     {
@@ -146,8 +68,7 @@
         "pk": 9,
         "fields": {
             "display_name": "canela",
-            "name": "canela",
-            "type_food": 9
+            "name": "canela"
         }
     },
     {
@@ -155,8 +76,7 @@
         "pk": 10,
         "fields": {
             "display_name": "ovo",
-            "name": "ovo",
-            "type_food": 6
+            "name": "ovo"
         }
     },
     {
@@ -164,8 +84,7 @@
         "pk": 11,
         "fields": {
             "display_name": "leite",
-            "name": "leite",
-            "type_food": 5
+            "name": "leite"
         }
     },
     {
@@ -173,8 +92,7 @@
         "pk": 12,
         "fields": {
             "display_name": "sal",
-            "name": "sal",
-            "type_food": 10
+            "name": "sal"
         }
     },
     {
@@ -182,8 +100,7 @@
         "pk": 13,
         "fields": {
             "display_name": "parmesão",
-            "name": "parmesão",
-            "type_food": 5
+            "name": "parmesão"
         }
     },
     {
@@ -191,8 +108,7 @@
         "pk": 14,
         "fields": {
             "display_name": "açúcar",
-            "name": "açúcar",
-            "type_food": 1
+            "name": "açúcar"
         }
     },
     {
@@ -200,8 +116,7 @@
         "pk": 15,
         "fields": {
             "display_name": "tapioca",
-            "name": "tapioca",
-            "type_food": 6
+            "name": "tapioca"
         }
     },
     {
@@ -209,8 +124,7 @@
         "pk": 16,
         "fields": {
             "display_name": "mussarela",
-            "name": "mussarela",
-            "type_food": 5
+            "name": "mussarela"
         }
     },
     {
@@ -218,8 +132,175 @@
         "pk": 17,
         "fields": {
             "display_name": "tomate",
-            "name": "tomate",
-            "type_food": 4
+            "name": "tomate"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 18,
+        "fields": {
+            "display_name": "maionese",
+            "name": "maionese"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 19,
+        "fields": {
+            "display_name": "presunto",
+            "name": "presunto"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 20,
+        "fields": {
+            "display_name": "pão",
+            "name": "pão"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 21,
+        "fields": {
+            "display_name": "macarrão",
+            "name": "macarrão"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 22,
+        "fields": {
+            "display_name": "frango",
+            "name": "frango"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 23,
+        "fields": {
+            "display_name": "cabolinha",
+            "name": "cebolinha"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 24,
+        "fields": {
+            "display_name": "amido de milho",
+            "name": "amido de milho"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 25,
+        "fields": {
+            "display_name": "gengibre",
+            "name": "gengibre"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 26,
+        "fields": {
+            "display_name": "gergelim",
+            "name": "gergelim"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 27,
+        "fields": {
+            "display_name": "alho",
+            "name": "alho"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 28,
+        "fields": {
+            "display_name": "Chocolate",
+            "name": "chocolate"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 29,
+        "fields": {
+            "display_name": "arroz",
+            "name": "arroz"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 30,
+        "fields": {
+            "display_name": "batata",
+            "name": "batata"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 31,
+        "fields": {
+            "display_name": "calabresa",
+            "name": "calabresa"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 32,
+        "fields": {
+            "display_name": "cebola",
+            "name": "cebola"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 33,
+        "fields": {
+            "display_name": "tomate-cereja",
+            "name": "tomate-cereja"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 34,
+        "fields": {
+            "display_name": "alho",
+            "name": "alho"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 35,
+        "fields": {
+            "display_name": "alecrim",
+            "name": "alecrim"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 36,
+        "fields": {
+            "display_name": "queijo",
+            "name": "queijo"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 37,
+        "fields": {
+            "display_name": "bacon",
+            "name": "bacon"
+        }
+    },
+    {
+        "model": "catalog.food",
+        "pk": 38,
+        "fields": {
+            "display_name": "parmesão",
+            "name": "parmesão"
         }
     },
     {
@@ -405,12 +486,500 @@
         }
     },
     {
+        "model": "catalog.ingredient",
+        "pk": 27,
+        "fields": {
+            "name": "4 colheres de sopa de maionese"
+        }
+    },
+    {
+        "modeel": "catalog.ingredient",
+        "pk": 28,
+        "fields": {
+            "name": "2 pacotes de pão de forma"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 29,
+        "fields": {
+            "name": "Molho de tomate a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 30,
+        "fields": {
+            "name": "400 g de presunto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 31,
+        "fields": {
+            "name": "450 g de muçarela"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 32,
+        "fields": {
+            "name": "Tomate cortado em rodelas"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 33,
+        "fields": {
+            "name": "Orégano a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 34,
+        "fields": {
+            "name": "1/2 pacote de macarrão espaguete"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 35,
+        "fields": {
+            "name": "2 dentes de alho amassados com sal"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 36,
+        "fields": {
+            "name": "Azeite a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 37,
+        "fields": {
+            "name": "Pimenta do reino a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 38,
+        "fields": {
+            "name": "1kg de frango cortado em cubos"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 39,
+        "fields": {
+            "name": "Sal e pimenta-do-reino a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 40,
+        "fields": {
+            "name": "1 colher de sopa de vinagre branco (ou suco de limão)"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 41,
+        "fields": {
+            "name": "Óleo vegetal neutro"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 42,
+        "fields": {
+            "name": "1 pimentão vermelho cortado em cubos"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 43,
+        "fields": {
+            "name": "1 pimentão verde cortado em cubos"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 44,
+        "fields": {
+            "name": "1 pimentão amarelo cortado em cubos"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 45,
+        "fields": {
+            "name": "1 cebola em cortada cubos"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 46,
+        "fields": {
+            "name": "1 colher de sopa de alho triturado ou massado"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 47,
+        "fields": {
+            "name": "1 colher de chá de gengibre em pó"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 48,
+        "fields": {
+            "name": "1 fio de óleo de gergelim (opcional)"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 49,
+        "fields": {
+            "name": "100 ml de shoyu"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 50,
+        "fields": {
+            "name": "1 e 1/2 colher de sopa de amido de milho"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 51,
+        "fields": {
+            "name": "1 xícara de chá de água quente"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 52,
+        "fields": {
+            "name": "1/2 xícara de chá de amendoim torrado e sem pele (opcional)"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 53,
+        "fields": {
+            "name": "Cebolinha verde picada a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 54,
+        "fields": {
+            "name": "1 colher de sopa bem cheia de amido de milho"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 55,
+        "fields": {
+            "name": "100 ml de água"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 56,
+        "fields": {
+            "name": "50 ml de shoyu"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 57,
+        "fields": {
+            "name": "1/2 envelope de caldo de galinha em pó. Se preferir, troque os 100 ml de água por caldo de galinha caseiro"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 58,
+        "fields": {
+            "name": "arroz"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 59,
+        "fields": {
+            "name": "1 xícara de chá de arroz cru"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 60,
+        "fields": {
+            "name": "1 litro de água"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 61,
+        "fields": {
+            "name": "1 litro de leite integral"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 62,
+        "fields": {
+            "name": "1 lata de leite condensado"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 63,
+        "fields": {
+            "name": "5 colheres de sopa de açúcar"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 64,
+        "fields": {
+            "name": "Canela em pau a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 65,
+        "fields": {
+            "name": "1 caixinha de creme de leite"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 66,
+        "fields": {
+            "name": "Meio quilo de batatas descascadas e picadas"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 67,
+        "fields": {
+            "name": "150 g de mussarela cortada em cubinhos"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 68,
+        "fields": {
+            "name": "1 calabresa fatiada"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 69,
+        "fields": {
+            "name": "1/2 cebola cortada"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 70,
+        "fields": {
+            "name": "20 unidades de tomate em rama"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 71,
+        "fields": {
+            "name": "360 g de tomate-cereja"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 72,
+        "fields": {
+            "name": "20 unidades de cebola aperitivo"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 73,
+        "fields": {
+            "name": "1 cabeça de alho"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 74,
+        "fields": {
+            "name": "1 1/4 xícara de chá de azeite extra virgem"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 75,
+        "fields": {
+            "name": "1 colher de sopa de vinagre balsâmico"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 76,
+        "fields": {
+            "name": "Sal a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 77,
+        "fields": {
+            "name": "Pimenta-do-reino a gosto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 78,
+        "fields": {
+            "name": "1 ramo de alecrim fresco"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 79,
+        "fields": {
+            "name": "1 colher de sopa de ervas secas"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 80,
+        "fields": {
+            "name": "2 ovos"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 81,
+        "fields": {
+            "name": "1 pitada de sal"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 82,
+        "fields": {
+            "name": "1 colher de manteiga"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 83,
+        "fields": {
+            "name": "1 fatia de presunto"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 84,
+        "fields": {
+            "name": "1 fatia de queijo"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 85,
+        "fields": {
+            "name": "2 fatias de pão"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 86,
+        "fields": {
+            "name": "500 g de massa de espaguete"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 87,
+        "fields": {
+            "name": "½ xícara de bacon em cubos"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 88,
+        "fields": {
+            "name": "1 colher de sopa de azeite"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 89,
+        "fields": {
+            "name": "2 dentes de alho picados"
+        }
+    },
+    {
+        "model": "catalog.ingredient",
+        "pk": 90,
+        "fields": {
+            "name": "1 xícara de parmesão ralado"
+        }
+    },
+    {
+        "model": "catalog.clientnotfood",
+        "pk": 1,
+        "fields": {
+            "client": 1,
+            "foods": [
+                7,
+                28
+            ]
+        }
+    },
+    {
+        "model": "catalog.clientnotfood",
+        "pk": 2,
+        "fields": {
+            "client": 3,
+            "foods": [
+                10,
+                11
+            ]
+        }
+    },
+    {
+        "model": "catalog.clientnotfood",
+        "pk": 3,
+        "fields": {
+            "client": 4,
+            "foods": [
+                10
+            ]
+        }
+    },
+    {
+        "model": "catalog.clientnotfood",
+        "pk": 4,
+        "fields": {
+            "client": 5,
+            "foods": []
+        }
+    },
+    {
         "model": "catalog.foodrecipe",
         "pk": 1,
         "fields": {
             "name": "waffle de pão de queijo",
             "subject": "lanche",
-            "description": "Bata todos ingredientes, depois junte o polvilho e misture bem.\r\nQuanddo a máquina de waffle estiver quente, unte-a com manteiga, coloque a massa e espere dourar.",
+            "description": "Bata todos ingredientes, depois junte o polvilho e misture bem.\r\nQuando a máquina de waffle estiver quente, unte-a com manteiga, coloque a massa e espere dourar.",
             "time_prepare": 20,
             "food_yield": "2 porções",
             "ingredients": [
@@ -510,55 +1079,224 @@
         }
     },
     {
-        "model": "catalog.clientfoodrecipe",
-        "pk": 1,
+        "model": "catalog.foodrecipe",
+        "pk": 5,
         "fields": {
-            "client": 1,
-            "created_at": "2023-04-28T05:13:37.885Z",
-            "updated_at": "2023-04-28T05:13:37.885Z",
-            "food_recipe": [
-                1,
-                2
+            "name": "bauru de forno com pão de forma",
+            "subject": "Jantar",
+            "description": "Reúna todos os ingredientes;\r\nPegue uma forma e unte-a com maionese;\r\nNa forma untada, acrescente uma camada de pão de forma, de modo a forrar todo o fundo do recipiente;\r\nPasse molho de tomate sobre a camada de pão de forma;\r\nPor último, faça uma camada de presunto, outra de mussarela, coloque as rodelas de tomate e salpique orégano a gosto;\r\nRepita o processo mais uma vez e deixe a última camada com presunto, muçarela, tomate e orégano;\r\nLeve para assar, em forno a 180º graus, até a muçarela derreter;",
+            "time_prepare": 50,
+            "food_yield": "12 porções",
+            "ingredients": [
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33
+            ],
+            "foods": [
+                17,
+                18,
+                19,
+                20
             ]
         }
     },
     {
-        "model": "catalog.clientfoodrecipe",
-        "pk": 2,
+        "model": "catalog.foodrecipe",
+        "pk": 6,
         "fields": {
-            "client": 2,
-            "created_at": "2023-04-28T05:13:47.498Z",
-            "updated_at": "2023-04-28T05:13:47.498Z",
-            "food_recipe": [
-                4
-            ]
-        }
-    },
-    {
-        "model": "catalog.clientfoodrecipe",
-        "pk": 3,
-        "fields": {
-            "client": 3,
-            "created_at": "2023-04-28T05:13:56.188Z",
-            "updated_at": "2023-04-28T05:13:56.188Z",
-            "food_recipe": [
-                1,
+            "name": "macarrão alho e óleo",
+            "subject": "Jantar",
+            "description": "Reúna todos os ingredientes;\r\nCozinhe o macarrão na água com sal;\r\nEm uma panela, refogue o alho no azeite, adicione a manteiga e deixe dourar;\r\nAdicione o macarrão cozido;\r\nAcerte o sal, coloque a pimenta do reino e mexa bem;\r\nAcrescente a cebolinha picada por cima e sirva! Bom apetite;",
+            "time_prepare": 30,
+            "food_yield": "2 porções",
+            "ingredients": [
                 2,
+                16,
+                34,
+                35,
+                36,
+                37
+            ],
+            "foods": [
                 3,
-                4
+                21
             ]
         }
     },
     {
-        "model": "catalog.clientfoodrecipe",
-        "pk": 4,
+        "model": "catalog.foodrecipe",
+        "pk": 7,
         "fields": {
-            "client": 4,
-            "created_at": "2023-04-28T05:14:00.203Z",
-            "updated_at": "2023-04-28T05:14:00.203Z",
-            "food_recipe": [
-                2,
-                3
+            "name": "frango xadrez",
+            "subject": "Almoço",
+            "description": "Reúna todos os ingredientes;\r\nEm um recipiente, coloque o frango já cortado em cubos, tempere com sal (bem pouco, pois vai shoyu na receita), pimenta e vinagre. Misture bem e deixe marinar alguns minutos;\r\nEsquente um fio de óleo em uma frigideira grande e doure os cubos de frango;\r\nAdicione os pimentões, a cebola, o alho, o gengibre, o óleo de gergelim, misture e deixe refogar, mexendo por vezes;\r\nEnquanto o frango refoga, coloque o shoyu em um recipiente, o amido de milho e misture até dissolver bem;\r\nAcrescente a mistura e a água quente no refogado. Misture bem e deixe apurar por alguns minutos (ou até o molho engrossar);\r\nJunte o amendoim, misture e desligue o fogo;\r\nFinalize com a cebolinha verde e sirva. Bom apetite!\r\n\r\nEm uma vasilha, misture os ingredientes do molho.\r\nDepois, jogue por cima do frango e dos legumes.\r\nDeixe ferver e engrossar.\r\nSalpique cebolinha na hora de servir.\r\nAgora é só servir. Bom apetite.\r\nEm uma vasilha, misture os ingredientes do molho\r\nDepois, jogue por cima do frango e dos legumes\r\nDeixe ferver e engrossar\r\nSalpique cebolinha na hora de servir\r\nBom apetite",
+            "time_prepare": 60,
+            "food_yield": "6 porções",
+            "ingredients": [
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+            ],
+            "foods": [
+                8,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27
+            ]
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 8,
+        "fields": {
+            "name": "arroz doce tradicional",
+            "subject": "Almoço",
+            "description": "Reúna todos os ingredientes;\r\nColoque o arroz e a água em uma panela, leve-a ao fogo médio e deixe cozinhar até que o arroz fique macio;\r\nDiminua o fogo, adicione o leite e mexa vagarosamente até o leite quase começar a ferver, ou seja, não deixe levantar fervura;\r\nAdicione o leite condensado e mexa sem parar por 2 minutos;\r\nAcrescente o açúcar, a canela em pau e mexa sem parar até o líquido ferver e ficar cremoso;\r\nDesligue o fogo, adicione o creme de leite e misture;\r\nAgora, fique à vontade para servir o arroz doce quente ou gelado. Aproveite!\r\n\r\nVocê também pode acrescentar outros ingredientes ao seu arroz doce, como cravo, coco ralado, leite de coco, entre outros. Bom apetite!",
+            "time_prepare": 40,
+            "food_yield": "8 porções",
+            "ingredients": [
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65
+            ],
+            "foods": [
+                29
+            ]
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 9,
+        "fields": {
+            "name": "batata assada com calabresa e queijo",
+            "subject": "Janta",
+            "description": "Reúna todos os ingredientes;\r\nColoque as batatas em uma panela com água, leve-a ao fogo, e cozinhe-as por cerca de 10 minutos;\r\nEscorra a água, transfira as batatas para um refratário, e tempere-as com sal, pimenta e azeite;\r\nEspalhe a mussarela, a calabresa e a cebola sobre as batatas; e asse-as em forno preaquecido a 200º graus por cerca de 30 minutos ou até a calabresa ficar crocante e a batata macia;\r\nAgora é só servir. Bom apetite!\r\n\r\nSugerimos que você sirva sua batata assada com calabresa e queijo acompanhada de salada de folhas, arroz branco, ou até mesmo sozinha como petisco. Aproveite!",
+            "time_prepare": 50,
+            "food_yield": "6 porções",
+            "ingredients": [
+                36,
+                39,
+                66,
+                67,
+                68,
+                69
+            ],
+            "foods": [
+                16,
+                30,
+                31,
+                32
+            ]
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 10,
+        "fields": {
+            "name": "confit de tomate e cebola",
+            "subject": "Lanche",
+            "description": "Disponha os tomates, a cebola e o alho em uma travessa.\r\nRegue com o azeite e com o vinagre balsâmico.\r\nSalpique o sal e a pimenta-do-reino.\r\nAdicione o ramo de alecrim e as ervas secas.\r\nLeve para assar a 150 ºC no forno já preaquecido.\r\nDeixe cozinhar lentamente, o que pode levar cerca de 2 horas.\r\nApós assado, o confit pode ser servido em seguida ou armazenado em um pote de vidro, na geladeira ou no freezer.",
+            "time_prepare": 120,
+            "food_yield": "10 porções",
+            "ingredients": [
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79
+            ],
+            "foods": [
+                17,
+                33,
+                34,
+                35
+            ]
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 11,
+        "fields": {
+            "name": "lanche de frigideira com ovo",
+            "subject": "Lanche",
+            "description": "Separe todos os ingredientes.\r\nQuebre os ovos em uma tigela, acrescente o sal e bata até ficar homogêneo.\r\nColoque uma colher de manteiga na frigideira e deixe derreter. Acrescente os ovos e distribua no fundo.\r\nQuando começar a firmar o ovo, coloque as fatias de pão lado a lado por cima dos ovos e vire.\r\nDobre as beiradas do ovo para dentro do pão, coloque o presunto e o queijo sobre um dos pães e dobre uma fatia de pão por cima da outra para formar o sanduíche.\r\nDeixe esquentar um pouco para derreter o queijo.\r\nEstá pronto para servir.",
+            "time_prepare": 7,
+            "food_yield": "1 lanche",
+            "ingredients": [
+                80,
+                81,
+                82,
+                83,
+                84,
+                85
+            ],
+            "foods": [
+                3,
+                10,
+                19,
+                20,
+                36
+            ]
+        }
+    },
+    {
+        "model": "catalog.foodrecipe",
+        "pk": 12,
+        "fields": {
+            "name": "espaguete à carbonara",
+            "subject": "Jantar",
+            "description": "Se você é apaixonado por macarrão, confira os ingredientes e o modo de preparo desse espaguete à carbonara, que pode ser servido tanto no almoço quanto no jantar.\r\n\r\nEm uma panela, cozinhe o macarrão com água e sal.\r\nEm um recipiente, bata os ovos e o creme de leite (como uma omelete) até que se misturem e reserve.\r\nEm uma frigideira, frite o bacon no azeite, adicione o alho picado no fim da fritura (sem deixar que o alho fique muito dourado) e desligue o fogo.\r\nJunte o macarrão cozido com o bacon frito.\r\nDespeje o molho e misture bem até que engrosse.\r\nPor último, coloque o parmesão ralado, acerte o sal e coloque um pouco de pimenta por cima.\r\nAgora é só servir, bom apetite.",
+            "time_prepare": 30,
+            "food_yield": "4 a 5 porções",
+            "ingredients": [
+                65,
+                76,
+                77,
+                80,
+                86,
+                87,
+                88,
+                89,
+                90
+            ],
+            "foods": [
+                10,
+                11,
+                37,
+                38
             ]
         }
     }
