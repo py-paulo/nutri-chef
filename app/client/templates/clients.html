@@ -35,7 +35,7 @@
     <div class="twelve wide widescreen twelve wide large screen twelve wide compute twelve wide tablet sixteen wide mobile column">
       <div class="ui search">
         <div class="ui icon fluid big input">
-          <input class="prompt" type="text" placeholder="Procurar Clientes...">
+          <input class="prompt" type="text" id="client-search" placeholder="Procurar Clientes...">
           <i class="search icon"></i>
         </div>
         <div class="results"></div>
@@ -46,7 +46,7 @@
   <div class="cards-group">
     <div class="ui six stackable doubling cards">
       {% for client in clients %}
-        <div class="ui fluid raised link card">
+        <div data-client-name="{{ client.full_name }}" class="ui fluid raised link card">
           <div class="blurring dimmable image">
             <div class="ui dimmer">
               <div class="content">

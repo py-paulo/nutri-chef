@@ -19,7 +19,7 @@
     <div class="twelve wide widescreen twelve wide large screen twelve wide compute twelve wide tablet sixteen wide mobile column">
       <div class="ui search">
         <div class="ui icon fluid big input">
-          <input class="prompt" type="text" placeholder="Procurar Receita...">
+          <input class="prompt" type="text" id="catalog-search" placeholder="Procurar Receita...">
           <i class="search icon"></i>
         </div>
         <div class="results"></div>
@@ -31,7 +31,7 @@
     <div class="ui six stackable doubling cards">
 
       {% for recipe in catalog %}
-      <a class="ui fluid raised link card" href="{% url 'recipe' recipe.id %}">
+      <a class="ui fluid raised link card" data-recipe-name="{{ recipe.name }}" href="{% url 'recipe' recipe.id %}">
         <div class="content">
           <i class="right floated star icon"></i>
           <div class="header">{{ recipe.name|capfirst }}</div>
