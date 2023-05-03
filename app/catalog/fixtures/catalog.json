@@ -493,7 +493,7 @@
         }
     },
     {
-        "modeel": "catalog.ingredient",
+        "model": "catalog.ingredient",
         "pk": 28,
         "fields": {
             "name": "2 pacotes de pão de forma"
