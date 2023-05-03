@@ -1,6 +1,8 @@
 # nutri-chef
 Sistema de geração de receitas para nutricionistas, usando um banco de dados de receitas que leva em consideração os alimentos que o cliente pode consumir para atingir seu objetivo de dieta.
 
+[![Vídeo de aprensentação](.assets/nutrichef-home.png)](https://youtu.be/8wnvkoL6o_c)
+
 ## Get Started
 
 Para executar o projeto você deve ter os seguintes softwares instalado na máquina:
