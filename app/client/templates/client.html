@@ -1,0 +1,140 @@
+{% extends "main.html" %}
+
+{% block title %} Cliente {% endblock %}
+
+{% block content %}
+  <div class="ui pointing menu">
+    <div class="header item">
+      NutriChef
+    </div>
+    <a class="item active" href="{% url 'clients' %}">
+      Clientes
+    </a>
+    <a class="item" href="{% url 'catalog' %}">
+      Catálogo
+    </a>
+  </div>
+
+  <div class="ui grid">
+    <div class="widescreen only two wide column">
+    </div>
+
+    <div class="twelve wide widescreen twelve wide large screen twelve wide compute twelve wide tablet sixteen wide mobile column">
+      <div class="ui centered grid">
+        <div class="six wide widescreen six wide large screen six wide computer six wide tablet sixteen wide mobile column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="{{ client.photo.url }}">
+            </div>
+            <div class="content">
+              <a class="header">{{ client.first_name }}</a>
+              <div class="meta">
+                {{ client.full_name }}
+              </div>
+              <div class="description">
+                {{ client.email }}
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                {{ client.created_at|date:'Y-m-d' }}
+              </span>
+              <span>
+                <i class="phone icon"></i>
+                {{ client.phone }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ten wide widescreen ten wide large screen twelve wide compute ten wide tablet sixteen wide mobile column">
+          <h2 class="ui center aligned icon header">
+            <i class="address book outline icon"></i>
+            <div class="content">
+              Alimentos que o cliente não pode consumir
+              <div class="sub header">Partimos do principio que caso não seja listado o alimento aqui o cliente pode consumir sem restrição.</div>
+            </div>
+          </h2>
+          <form class="ui form" method="POST" action="{% url 'add-food-restriction' %}">
+            {% csrf_token %}
+            <div class="ui fluid big right labeled left icon input">
+              <i class="shopping cart icon"></i>
+                <input type="text" id="food-name" name="food-name" required placeholder="Nome da comida...">
+                <button type="submit" class="ui tag label">
+                  Adicionar
+                </button>
+            </div>
+            <input type="hidden" id="client-id" name="client-id" value="{{ client.id }}" />
+          </form>
+          <div class="ui horizontal divider">
+          </div>
+          <div>
+            {% for food in not_foods %}
+            <a class="ui red tag label">{{ food.name }} <i data-value="{{ food.name }}" class="delete icon"></i></a>
+            {% endfor %}
+          </div>
+          <div class="ui horizontal divider">
+          </div>
+
+          <div class="cards-group">
+            <div class="ui three stackable doubling cards">
+        
+              {% for recipe in catalog %}
+              <a class="ui fluid raised link card" href="{% url 'recipe' recipe.id %}">
+                <div class="content">
+                  <i class="right floated star icon"></i>
+                  <div class="header">{{ recipe.name|capfirst }}</div>
+                  <div class="meta">
+                    <span>{{ recipe.subject }}</span>
+                  </div>
+                  <ul class="ui list">
+                    {% for ingredient in recipe.ingredients %}
+                    <li>{{ ingredient.name }}</li>
+                    {% endfor %}
+                    <span>...</span>
+                  </ul>
+                </div>
+                <div class="extra content">
+                  <span class="left floated like">
+                    <i class="user plus icon"></i>
+                    {{ recipe.food_yield }}
+                  </span>
+                  <span class="right floated star">
+                    <i class="clock icon"></i>
+                    {{ recipe.time_prepare }} min
+                  </span>
+                </div>
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="widescreen only two wide column"></div>
+  </div>
+
+  <div class="ui basic tiny modal">
+    <div id="delete-message" class="ui icon header">
+      <i class="trash alternate icon"></i>
+      Deseja deletar esse item?
+    </div>
+    <div class="actions">
+      <form method="POST" action="{% url 'delete-food-restriction' %}" class="ui form">
+        {% csrf_token %}
+        <input type="hidden" id="delete-food-name" name="delete-food-name" value="" />
+        <input type="hidden" id="client-to-delete-food" name="client-to-delete-food" value="{{ client.id }}" />
+        <div class="ui red basic cancel inverted button">
+          <i class="remove icon"></i>
+          No
+        </div>
+        <button type="submit" class="ui red ok inverted button">
+          <i class="checkmark icon"></i>
+          Yes
+        </button>
+      </form>
+    </div>
+  </div>
+  
+{% endblock %}

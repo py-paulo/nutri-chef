@@ -1,0 +1,106 @@
+{% extends "main.html" %}
+
+{% block title %} Meus Clientes {% endblock %}
+
+{% block content %}
+  <div class="ui pointing menu">
+    <div class="header item">
+      NutriChef
+    </div>
+    <a class="item active" href="{% url 'clients' %}">
+      Clientes
+    </a>
+    <a class="item" href="{% url 'catalog' %}">
+      Catálogo
+    </a>
+  </div>
+  <div class="ui grid">
+    {% if iserror == "yes" %}
+      <div class="twelve wide widescreen twelve wide large screen twelve wide compute twelve wide tablet sixteen wide mobile column">
+        <div>
+          <div class="ui negative icon message">
+            <i class="exclamation triangle icon"></i>
+            <i class="close icon"></i>
+            <div class="content">
+            <div class="header">
+              Ops... parece que aconteceu um erro :/
+            </div>
+            <p>{{ message_error }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <div class="widescreen only two wide column"></div>
+    <div class="twelve wide widescreen twelve wide large screen twelve wide compute twelve wide tablet sixteen wide mobile column">
+      <div class="ui search">
+        <div class="ui icon fluid big input">
+          <input class="prompt" type="text" id="client-search" placeholder="Procurar Clientes...">
+          <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+    </div>
+    <div class="widescreen only two wide column"></div>
+  </div>
+  <div class="cards-group">
+    <div class="ui six stackable doubling cards">
+      {% for client in clients %}
+        <div data-client-name="{{ client.full_name }}" class="ui fluid raised link card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button detail" client-id="{{ client.id }}">Detalhes do Cliente</div>
+                </div>
+              </div>
+            </div>
+            <img src="{{ client.photo.url }}">
+          </div>
+          <div class="content">
+            <div class="header">{{ client.first_name }}</div>
+            <div class="meta">
+              {{ client.full_name }}
+            </div>
+            <div class="description">
+              {{ client.email }}
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="right floated">
+              {{ client.created_at|date:'Y-m-d' }}
+            </span>
+            <span>
+              <i class="phone icon"></i>
+              {{ client.phone }}
+            </span>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+  {% if len > 20 %}
+  <div class="">
+    <div class="">
+      <div class="ui sixteen column centered grid">
+        <div class="column">
+          <div class="ui pagination menu">
+            <a class="icon item">
+              <i class="left chevron icon"></i>
+            </a>
+            <a class="item">1</a>
+            <a class="item">2</a>
+            <a class="item">3</a>
+            <a class="item">5</a>
+            <a class="icon item">
+              <i class="right chevron icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+{% endblock %}
