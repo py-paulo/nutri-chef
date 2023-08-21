@@ -50,3 +50,4 @@ python manage.py runserver
 ## Segmentos de Clientes
 
 - Nutricionistas que trabalham com pacientes que têm objetivos específicos de dieta.
+
